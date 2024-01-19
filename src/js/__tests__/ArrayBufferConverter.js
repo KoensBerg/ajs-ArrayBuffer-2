@@ -16,7 +16,7 @@ test('should receive json-string', () => {
 // - - - - - - - - - - - - - - - - - - - - - - - - -
 // Должны выбросить ошибку 'Нет загруженных данных'
 // - - - - - - - - - - - - - - - - - - - - - - - - -
-test('throw', () => {
+test('throw on no data loaded', () => {
   const converter = new ArrayBufferConverter(); // создаём новый экземпляр класса
   const convertedData = () => converter.toString(); // пытаемся преобразовать несуществующие данные
 
